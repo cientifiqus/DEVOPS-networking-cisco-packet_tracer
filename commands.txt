@@ -1,0 +1,33 @@
+tart Configuration Switch: Enable 
+Enter setup with privileges: configure terminal 
+set vlan: vlan  vlan 10
+Create vlan name: name vlan10
+Exit: exit
+Exit: exit
+Show created vlans: show vlan 
+
+tart Configuration Switch: Enable
+Enter setup with privileges: configure terminal 
+set vlan: vlan 20
+Create vlan name: name vlan20
+Exit: exit
+Exit: exit
+Show created vlans: show vlan 
+
+Enter setup with privileges: configure terminal 
+Interface to configure: interface Fa0/1
+Switch to port mode access: switchport mode access 
+Configure the port with access to vlan: switchport access vlan 10
+Interface with range: interface range Fa0/1-10
+Configure the port with access to vlan: switchport access vlan 10
+Exit: exit
+Show created vlans: show vlan
+
+Enter setup with privileges: configure terminal 
+Interface to configure: interface Fa0/11
+Switch to port mode access: switchport mode access 
+Configure the port with access to vlan: switchport access vlan 20
+Interface with range: interface range Fa0/11-20
+Configure the port with access to vlan: switchport access vlan 20
+Exit: exit
+Show created vlans: show vlan 
